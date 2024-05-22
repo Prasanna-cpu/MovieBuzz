@@ -3,6 +3,7 @@ import MenuItem from './MenuItem'
 import { PiHouseLight } from "react-icons/pi";
 import { FcAbout } from "react-icons/fc";
 import Link from 'next/link';
+import DarkModeToggler from './DarkModeToggler';
 
 
 export default function Header() {
@@ -12,10 +13,13 @@ export default function Header() {
             <MenuItem title="Home" address="/" Icon={PiHouseLight} />
             <MenuItem title="About" address="/about" Icon={FcAbout} />
         </div>
-        <Link href={'/'} className='flex gap-1 items-center'>
+        <div className='flex items-center gap-4'>
+          <DarkModeToggler/>
+          <Link href={'/'} className='flex gap-1 items-center'>
             <span className='text-2xl font-bold bg-green-700 py-1 px-2 rounded-lg text-white cursor-pointer'>Movi</span>
             <span className='text-2xl font-bold bg-orange-600 py-1 px-2 rounded-lg text-black cursor-pointer'>Buzz</span>
-        </Link>
+          </Link>
+        </div>
     </div>
   )
 }
