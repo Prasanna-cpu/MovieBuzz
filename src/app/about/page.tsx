@@ -12,6 +12,17 @@ export default function About() {
         plot summaries, and information about the cast and crew. Your movie discovery experience will be improved by
          our simple search and filter options, which make it simple to find exactly what you're looking for.
       </p>
+      <p>
+        At MoviBuzz, we believe that movies are more than just entertainment—they're a 
+        powerful medium that can inspire, educate, and evoke deep emotions. 
+        Our platform not only offers extensive movie data but also features insightful articles, 
+        interviews with filmmakers, and behind-the-scenes looks at your favorite films. 
+        Our dedicated team of movie buffs and industry experts work tirelessly to bring you 
+        the latest news and trends from the world of cinema. Whether you’re a casual viewer 
+         or a hardcore cinephile,
+         MoviBuzz aims to be your go-to source for all movie-related content.
+      </p>
+      
       
     </div>
   );
