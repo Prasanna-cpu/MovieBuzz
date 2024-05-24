@@ -3,7 +3,11 @@ import React from 'react'
 
 const api_key=process.env.API_KEY
 
-export default async function MoviePage({ params }) {
+export default async function MoviePage({
+  params,
+}: {
+  params: { id: string };
+}) {
   const movieId = params.id;
 
   const res = await fetch(
@@ -24,18 +28,24 @@ export default async function MoviePage({ params }) {
           width={500}
           height={300}
           alt="Movie Image"
-          className='rounded-lg'
-          style={{maxWidth:'100%' , maxHeight:'100%'}}
+          className="rounded-lg"
+          style={{ maxWidth: "100%", maxHeight: "100%" }}
         />
 
-        <div className='p-2'>
-            <h2 className='text-lg mb-3 font-bold'>{movie.title || movie.name}</h2>
-            <p className='text-lg mb-3'>{movie.overview}</p>
-            <p className='mb-3'>
-                <span className='font-semibold mr-1'>Date Released</span>
-                {movie.release_date || movie.first_air_date}
-            </p>
-            <p className="mb-3"> <span className='font-semibold mr-1'>Rating</span> {movie.vote_count}</p>
+        <div className="p-2">
+          <h2 className="text-lg mb-3 font-bold">
+            {movie.title || movie.name}
+          </h2>
+          <p className="text-lg mb-3">{movie.overview}</p>
+          <p className="mb-3">
+            <span className="font-semibold mr-1">Date Released</span>
+            {movie.release_date || movie.first_air_date}
+          </p>
+          <p className="mb-3">
+            {" "}
+            <span className="font-semibold mr-1">Rating</span>{" "}
+            {movie.vote_count}
+          </p>
         </div>
       </div>
     </div>
