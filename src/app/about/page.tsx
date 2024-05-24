@@ -11,15 +11,15 @@ export default function About() {
         MoviBuzz offers a wide selection of films, including timeless classics, indie gems, and the newest blockbusters. 
         We make an effort to offer comprehensive details about every film, such as ratings, user reviews, 
         plot summaries, and information about the cast and crew. Your movie discovery experience will be improved by
-         our simple search and filter options, which make it simple to find exactly what you're looking for.
+         our simple search and filter options, which make it simple to find exactly what you are looking for.
       </p>
       <p>
-        At MoviBuzz, we believe that movies are more than just entertainment—they're a 
+        At MoviBuzz, we believe that movies are more than just entertainment,they are 
         powerful medium that can inspire, educate, and evoke deep emotions. 
         Our platform not only offers extensive movie data but also features insightful articles, 
         interviews with filmmakers, and behind-the-scenes looks at your favorite films. 
         Our dedicated team of movie buffs and industry experts work tirelessly to bring you 
-        the latest news and trends from the world of cinema. Whether you’re a casual viewer 
+        the latest news and trends from the world of cinema. Whether you are a casual viewer 
          or a hardcore cinephile,
          MoviBuzz aims to be your go-to source for all movie-related content.
       </p>
